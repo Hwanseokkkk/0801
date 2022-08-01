@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Scanner; //초를 입력하면 시간과 분으로 나오게한다.
 
 public class Practice1 {
 	public static void main(String[] args) {
