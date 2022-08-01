@@ -1,7 +1,7 @@
 
 public class Student{
 	String name, hakbun; //스태틱이 없으니깐 멤버,인스턴스 변수
-	int kor, mat, eng, tot;
+	int kor, mat, eng, tot,age;
 	double avg;
 	char grade;
 
@@ -14,10 +14,10 @@ public class Student{
 	}
 
 	void calcGrade() {
-		grade = (avg <= 100 && avg >= 90) ? 'A' : 
-			(avg <= 90) ? 'B' : 
-				(avg <= 80) ? 'C' : 
-					(avg <= 70) ? 'D' : 'F';
+		grade = (avg <= 100 && avg >= 90) ? 'A' : //3항 연산
+			(avg < 90) ? 'B' : 
+				(avg < 80) ? 'C' : 
+					(avg < 70) ? 'D' : 'F';
 	}
 	void display() {
 	System.out.printf("%s(%s)\t %d\t %d\t %d\t %d\t%.2f\t%c\n" ,
